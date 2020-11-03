@@ -1,0 +1,314 @@
+AA-Counters:
+-------------
+Authentication Counters 
+  Access-Request Sent:                 202
+  Access-Response Received:             201
+  Access-Request Timeouts:               1
+Accounting Counters 
+  Accounting-Request Sent:             505
+  Accounting-Response Received:        505
+  Accounting-Request Timeouts:          91
+
+  RADIUS Acct-req purged:                0
+  RADIUS sec Acct-req purged:            0
+  GTPP Acct-req purged:                  0
+  GTPP sec Acct-req purged:              0
+  GTPP Chrg-req purged:                  0
+  GTPP sec Chrg-req purged:              0
+------------------------------------------------------------------------------- 
+ APN Name  : iberia.sgh.es
+ VPN Name  : services-apns
+
+Data Statistics:
+
+  Uplnk Bytes:                194073619234  Dnlnk Bytes:               1301487737700
+  Uplnk Pkts:                  818204990  Dnlnk Pkts:                1386428889
+  RAT Type statistics:
+    GERAN
+     Uplnk Bytes:                      0  Dnlnk Bytes:                        0
+    UTRAN
+     Uplnk Bytes:                      0  Dnlnk Bytes:                        0
+    EUTRAN
+     Uplnk Bytes:                      0  Dnlnk Bytes:                        0
+
+  Uplnk Bytes dropped:         303402835  Dnlnk Bytes dropped:       4890903426
+  Uplnk Pkts dropped:            1957533  Dnlnk Pkts dropped:           4368593
+
+  UL Flow MBR excd byte drop:          0  DL Flow MBR excd byte drop:         0
+  UL Flow MBR excd pkt drop:           0  DL Flow MBR excd pkt drop:          0
+  UL Flow GBR excd byte drop:          0  DL Flow GBR excd byte drop:         0
+  UL Flow GBR excd pkt drop:           0  DL Flow GBR excd pkt drop:          0
+  UL AMBR excd byte drop:              0  DL AMBR excd byte drop:             0
+  UL AMBR excd pkt drop:               0  DL AMBR excd pkt drop:              0
+  UL misc byte drop:                   0  DL misc byte drop:                  0
+  UL misc pkt drop:                    0  DL misc pkt drop:                   0
+  UL Ovrchrg Prtctn byte drop:         0  DL Ovrchrg Prtctn byte drop:        0
+  UL Ovrchrg Prtctn pkt drop:          0  DL Ovrchrg Prtctn pkt drop:         0
+  IP bad hdr:                        215  IP ttl exceeded:                  116
+  IP fragments sent:                   0  IP could not fragment:              0
+  IP input acl drop:              813643  IP output acl drop:                 0
+  IP input css down drop:              0  IP early pdu rcvd:                  0
+  IP output css down drop:             0  IP bad length trim:                10
+
+  IP src violations:                9639
+  IP src violations no acct:           0
+  IP src violations ignored:           0
+
+  Non-IP port violation drop:          0
+  Non-IP protocol violation drop:      0
+  Non-IP invalid AS src addr drop:     0
+  Non-IP reassembled pkts:             0
+
+Priority Marking Statistics:
+    Uplink :                                Downlink : 
+        P 0:                 784966724        P 0:                1331036063
+        P 1:                         0        P 1:                         0
+        P 2:                         0        P 2:                         0
+        P 3:                         0        P 3:                         0
+        P 4:                         0        P 4:                         0
+        P 5:                         0        P 5:                         0
+        P 6:                         0        P 6:                         0
+        P 7:                         0        P 7:                         0
+
+
+Subscriber session statistics:
+
+  Default bearers active:            177  Dedicated bearers active:           0
+  Default bearers setup:            3583  Dedicated bearers setup:            0
+  Default bearers released:         3591  Dedicated bearers released:         0
+  Default bearers rel fail:            0  Dedicated bearers rel fail:         0
+  Default bearers rejected:            0  Dedicated bearers rejected:         0
+  UE-init mod:                     28827  Network-init mod:               24362
+  UE-init mod fail:                    0  Network-init mod fail:            479
+  Total PDN-Type stats:
+    PDN-Type IPv4 sessions:               PDN-Type IPv6 sessions: 
+      Active:                        177  Active:                             0
+      Setup:                        3583  Setup:                              0
+      Released:                     3591  Released:                           0
+    PDN-Type IPv4v6 sessions:             PDN-Type Non-IP sessions: 
+      Active:                          0  Active:                             0
+      Setup:                           0  Setup:                              0
+      Released:                        0  Released:                           0
+  
+Number of PDNs rejected due to backoff algorithm:                           0
+
+  Initiated Sessions per RAT Type:
+    EUTRAN:                         1663   UTRAN:                           1913
+    GERAN:                           114   EHRPD:                              0
+    S2A GTP:                           0   S2B GTP:                            0
+    S2B PMIP:                          0   NB-IoT:                             0
+  Active Sessions per RAT Type:
+    EUTRAN:                          163   UTRAN:                             14
+    GERAN:                             0   WLAN:                               0
+    HSPA:                              0   NB-IoT:                             0
+    OTHER:                             0
+
+
+Inter Technology handover:
+  GNGP-to-LTE handover:                   LTE-to-GNGP handover:
+    Attempted:                   20803      Attempted:                  19278
+    Succeeded:                   20803      Succeeded:                  19278
+    Failed:                          0      Failed:                         0
+
+  GNGP-to-S4SGSN handover:                S4SGSN-to-GNGP handover:
+    Attempted:                       0      Attempted:                      0
+    Succeeded:                       0      Succeeded:                      0
+    Failed:                          0      Failed:                         0
+
+  S4SGSN-to-LTE handover:                 LTE-to-S4SGSN handover:
+    Attempted:                       1      Attempted:                      1
+    Succeeded:                       1      Succeeded:                      1
+    Failed:                          0      Failed:                         0
+
+  LTE-to-eHRPD handover:                  eHRPD-to-LTE handover:
+    Attempted:                       0      Attempted:                      0
+    Succeeded:                       0      Succeeded:                      0
+    Failed:                          0      Failed:                         0
+
+  LTE-to-S2bPMIP handover:                S2bPMIP-to-LTE handover:
+    Attempted:                       0      Attempted:                      0
+    Succeeded:                       0      Succeeded:                      0
+    Failed:                          0      Failed:                         0
+
+  eHRPD-to-S2bPMIP handover:              S2bPMIP-to-eHRPD handover:
+    Attempted:                       0      Attempted:                      0
+    Succeeded:                       0      Succeeded:                      0
+    Failed:                          0      Failed:                         0
+
+  S2bGTP-to-LTE handover:                 LTE-to-S2bGTP handover:
+    Attempted:                       0      Attempted:                      0
+    Succeeded:                       0      Succeeded:                      0
+    Failed:                          0      Failed:                         0
+
+  S2bGTP-to-eHRPD handover:               eHRPD-to-S2bGTP handover:
+    Attempted:                       0      Attempted:                      0
+    Succeeded:                       0      Succeeded:                      0
+    Failed:                          0      Failed:                         0
+
+  S2aGTP-to-LTE handover:                 LTE-to-S2aGTP handover:
+    Attempted:                       0      Attempted:                      0
+    Succeeded:                       0      Succeeded:                      0
+    Failed:                          0      Failed:                         0
+
+
+IP address allocation statistics:
+
+  Total IPv4 addrs allocated:
+    Local pool add assign:           177   DHCP proxy assign:                 0
+    Static addr assign:                0   DHCP relay assign:                 0
+    aaa provided addr:                 0   No allocation:                     0
+    skipped ip validation 
+    for L3 tunnels:                    0
+  Total IPv6 addrs allocated:
+    Stateless auto config:             0
+    Local pool add assign:             0   DHCPv6 proxy assign:               0
+    Static addr assign:                0   aaa provided addr:                 0
+    No allocation:                     0
+    skipped ip validation 
+    for L3 tunnels:                    0
+  Total IPv6 Interface-ID allocated:
+    AAA provided:             0
+    Locally generated:             0
+  RAT Type statistics:
+    GERAN Dynamic address allocated
+     IPv4:                             0   IPv6:                              0
+     IPv4v6:                           0
+    UTRAN Dynamic address allocated
+     IPv4:                             0   IPv6:                              0
+     IPv4v6:                           0
+
+
+4G Bearers Released By Reasons:
+
+                           QCI1       QCI2       QCI3       QCI4       QCI5       QCI6       QCI7       QCI8       QCI9
+   Admin disconnect:          0          0          0          0          0          0          0          0          0
+
+
+Subscriber QoS Statistics:
+
+  QCI 1:
+    Bearer Active:                             0   Bearer setup:                                0
+    Bearer Released:                           0   Bearer Rejected:                             0
+    Uplink Bytes forwarded:                    0   Downlink Bytes forwarded:                    0
+    Uplink pkts forwarded:                     0   Downlink pkts forwarded:                     0
+    Uplink Bytes dropped:                      0   Downlink Bytes dropped:                      0
+    Uplink pkts dropped:                       0   Downlink pkts dropped:                       0   
+    Uplink Bytes dropped(MBR Excd):            0   Downlink Bytes dropped(MBR Excd):            0
+    Uplink pkts dropped(MBR Excd):             0   Downlink pkts dropped(MBR Excd):             0   
+  QCI 2:
+    Bearer Active:                             0   Bearer setup:                                0
+    Bearer Released:                           0   Bearer Rejected:                             0
+    Uplink Bytes forwarded:                    0   Downlink Bytes forwarded:                    0
+    Uplink pkts forwarded:                     0   Downlink pkts forwarded:                     0
+    Uplink Bytes dropped:                      0   Downlink Bytes dropped:                      0
+    Uplink pkts dropped:                       0   Downlink pkts dropped:                       0   
+    Uplink Bytes dropped(MBR Excd):            0   Downlink Bytes dropped(MBR Excd):            0
+    Uplink pkts dropped(MBR Excd):             0   Downlink pkts dropped(MBR Excd):             0   
+  QCI 3:
+    Bearer Active:                             0   Bearer setup:                                0
+    Bearer Released:                           0   Bearer Rejected:                             0
+    Uplink Bytes forwarded:                    0   Downlink Bytes forwarded:                    0
+    Uplink pkts forwarded:                     0   Downlink pkts forwarded:                     0
+    Uplink Bytes dropped:                      0   Downlink Bytes dropped:                      0
+    Uplink pkts dropped:                       0   Downlink pkts dropped:                       0   
+    Uplink Bytes dropped(MBR Excd):            0   Downlink Bytes dropped(MBR Excd):            0
+    Uplink pkts dropped(MBR Excd):             0   Downlink pkts dropped(MBR Excd):             0   
+  QCI 4:
+    Bearer Active:                             0   Bearer setup:                                0
+    Bearer Released:                           0   Bearer Rejected:                             0
+    Uplink Bytes forwarded:                    0   Downlink Bytes forwarded:                    0
+    Uplink pkts forwarded:                     0   Downlink pkts forwarded:                     0
+    Uplink Bytes dropped:                      0   Downlink Bytes dropped:                      0
+    Uplink pkts dropped:                       0   Downlink pkts dropped:                       0   
+    Uplink Bytes dropped(MBR Excd):            0   Downlink Bytes dropped(MBR Excd):            0
+    Uplink pkts dropped(MBR Excd):             0   Downlink pkts dropped(MBR Excd):             0   
+  QCI 5:
+    Bearer Active:                             0   Bearer setup:                                0
+    Bearer Released:                           0   Bearer Rejected:                             0
+    Uplink Bytes forwarded:                    0   Downlink Bytes forwarded:                    0
+    Uplink pkts forwarded:                     0   Downlink pkts forwarded:                     0
+    Uplink Bytes dropped:                      0   Downlink Bytes dropped:                      0
+    Uplink pkts dropped:                       0   Downlink pkts dropped:                       0   
+    Uplink Bytes dropped(MBR Excd):            0   Downlink Bytes dropped(MBR Excd):            0
+    Uplink pkts dropped(MBR Excd):             0   Downlink pkts dropped(MBR Excd):             0   
+  QCI 6:
+    Bearer Active:                           131   Bearer setup:                             3054
+    Bearer Released:                        3065   Bearer Rejected:                             0
+    Uplink Bytes forwarded:           155030203810   Downlink Bytes forwarded:           926832397067
+    Uplink pkts forwarded:             590901784   Downlink pkts forwarded:            1015025376
+    Uplink Bytes dropped:              253193378   Downlink Bytes dropped:             3400517752
+    Uplink pkts dropped:                 1597273   Downlink pkts dropped:                 3058177   
+    Uplink Bytes dropped(MBR Excd):            0   Downlink Bytes dropped(MBR Excd):            0
+    Uplink pkts dropped(MBR Excd):             0   Downlink pkts dropped(MBR Excd):             0   
+  QCI 7:
+    Bearer Active:                            17   Bearer setup:                              205
+    Bearer Released:                         203   Bearer Rejected:                             0
+    Uplink Bytes forwarded:           11275002213   Downlink Bytes forwarded:           100501228613
+    Uplink pkts forwarded:              58347951   Downlink pkts forwarded:             106964260
+    Uplink Bytes dropped:               10945934   Downlink Bytes dropped:              425039550
+    Uplink pkts dropped:                   89322   Downlink pkts dropped:                  376162   
+    Uplink Bytes dropped(MBR Excd):            0   Downlink Bytes dropped(MBR Excd):            0
+    Uplink pkts dropped(MBR Excd):             0   Downlink pkts dropped(MBR Excd):             0   
+  QCI 8:
+    Bearer Active:                             0   Bearer setup:                                1
+    Bearer Released:                           1   Bearer Rejected:                             0
+    Uplink Bytes forwarded:               626181   Downlink Bytes forwarded:              1839281
+    Uplink pkts forwarded:                  9511   Downlink pkts forwarded:                  9498
+    Uplink Bytes dropped:                 639470   Downlink Bytes dropped:                      0
+    Uplink pkts dropped:                    3282   Downlink pkts dropped:                       0   
+    Uplink Bytes dropped(MBR Excd):            0   Downlink Bytes dropped(MBR Excd):            0
+    Uplink pkts dropped(MBR Excd):             0   Downlink pkts dropped(MBR Excd):             0   
+  QCI 9:
+    Bearer Active:                            29   Bearer setup:                              493
+    Bearer Released:                         492   Bearer Rejected:                             0
+    Uplink Bytes forwarded:           27766933331   Downlink Bytes forwarded:           269261369313
+    Uplink pkts forwarded:             168940182   Downlink pkts forwarded:             260061162
+    Uplink Bytes dropped:               38624053   Downlink Bytes dropped:             1065346124
+    Uplink pkts dropped:                  267656   Downlink pkts dropped:                  934254   
+    Uplink Bytes dropped(MBR Excd):            0   Downlink Bytes dropped(MBR Excd):            0
+    Uplink pkts dropped(MBR Excd):             0   Downlink pkts dropped(MBR Excd):             0   
+  Std QCI(Non-GBR):
+    Bearer Released:                        3761
+      Dedicated Bearer Released due to Idle-Inactivity timeout:                             0
+  Std QCI(GBR):
+    Bearer Released:                           0
+      Dedicated Bearer Released due to Idle-Inactivity timeout:                             0
+  Non-Std QCI(Non-GBR):
+    Bearer Active:                             0   Bearer setup:                                0
+    Bearer Released:                           0   Bearer Rejected:                             0
+      Dedicated Bearer Released due to Idle-Inactivity timeout:                             0
+
+    Uplink Bytes forwarded:                    0   Downlink Bytes forwarded:                    0
+    Uplink pkts forwarded:                     0   Downlink pkts forwarded:                     0
+    Uplink Bytes dropped:                      0   Downlink Bytes dropped:                      0
+    Uplink pkts dropped:                       0   Downlink pkts dropped:                       0   
+    Uplink Bytes dropped(MBR Excd):            0   Downlink Bytes dropped(MBR Excd):            0
+    Uplink pkts dropped(MBR Excd):             0   Downlink pkts dropped(MBR Excd):             0   
+  Non-Std QCI(GBR):
+    Bearer Active:                             0   Bearer setup:                                0
+    Bearer Released:                           0   Bearer Rejected:                             0
+      Dedicated Bearer Released due to Idle-Inactivity timeout:                             0
+
+    Uplink Bytes forwarded:                    0   Downlink Bytes forwarded:                    0
+    Uplink pkts forwarded:                     0   Downlink pkts forwarded:                     0
+    Uplink Bytes dropped:                      0   Downlink Bytes dropped:                      0
+    Uplink pkts dropped:                       0   Downlink pkts dropped:                       0   
+    Uplink Bytes dropped(MBR Excd):            0   Downlink Bytes dropped(MBR Excd):            0
+    Uplink pkts dropped(MBR Excd):             0   Downlink pkts dropped(MBR Excd):             0   
+  Invalid/Not-Configured QCI:
+    Bearer Rejected:                           0
+
+  current contexts (selected APN(s)):           177
+  current contexts (system wide):           3545951
+  cumulative contexts (selected APN(s)):       3584
+  cumulative contexts (system wide):     1603010977
+
+  Current APN context load:             (0.00%)
+  Cumulative APN context load:          (0.00%)
+
+Pilot packet statistics:
+    NAT-Alloc:                    0  NAT-De-Alloc:                0
+    Non-NAT-Alloc:                0  Non-NAT-De-Alloc:            0
+    Total-Alloc:                  0  Total-De-Alloc:              0
+    RAT-Change-User-Info:         0  RAT-Change-NAT-Info:         0
+    
