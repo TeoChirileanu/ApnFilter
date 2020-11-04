@@ -1,29 +1,44 @@
+import json
 from re import findall
 from pprint import pprint
-from typing import List, Dict
+from typing import List, Dict, Tuple
+
+
+def get_apn_names(apn_data: str) -> List[str]:
+    apn_regex: str = r"APN Name  : ((.*))"
+    apn_name_tuples: List[Tuple[str, ...]] = findall(apn_regex, apn_data)
+    apn_names: List[str] = [apn_name_tuple[0] for apn_name_tuple in apn_name_tuples]
+    return apn_names
+
+
+def get_apn_bearers(apn_data: str) -> List[int]:
+    apn_bearers_regex: str = r"Default bearers active: \s+ (\d+)"
+    apn_bearers_as_string: List[str] = findall(apn_bearers_regex, apn_data)
+    apn_bearers: List[int] = [int(apn_bearer) for apn_bearer in apn_bearers_as_string]
+    return apn_bearers
+
 
 if __name__ == '__main__':
     with open("tstapn.txt") as file:
-        data: str = file.read()
+        data_in: str = file.read()
 
-    apn_regex: str = r"APN Name  : ((.*))"
-    apn_name_tuples = findall(apn_regex, data)
-    apn_names: List[str] = [apn_name_tuple[0] for apn_name_tuple in apn_name_tuples]
+    apn_names: List[str] = get_apn_names(data_in)
+    apns_bearers: List[int] = get_apn_bearers(data_in)
+    apn_info: Dict[str, int] = {
+        apn_name: apn_bearers
+        for apn_name, apn_bearers in zip(apn_names, apns_bearers)
+        if apn_bearers > 0
+    }
+    app_info_sorted_by_bearers: Dict[str, int] = {
+        apn_name: apn_bearers
+        for apn_name, apn_bearers in
+        sorted(
+            apn_info.items(),
+            key=lambda apn_info: apn_info[1],  # sort by value i.e. active bearers
+            reverse=True
+        )
+    }
+    pprint(app_info_sorted_by_bearers)
 
-    active_bearers_regex: str = r"Default bearers active: \s+ (\d+)"
-    active_bearers_nos_as_string: List[str] = findall(active_bearers_regex, data)
-    active_bearers_nos: List[int] = list(map(lambda x: int(x), active_bearers_nos_as_string))
-
-    apn_info: Dict[str, int] = {}
-    for apn_name, active_bearers_no in zip(apn_names, active_bearers_nos):
-        apn_info[apn_name] = active_bearers_no
-
-    # todo: investigate inspection error
-    apn_info_without_zero_bearers: Dict[str, int] = dict(filter(lambda kvp: kvp[1] > 0, apn_info.items()))
-
-    # todo: convert to dictionary
-    apn_info_without_zero_bearers_sorted = sorted(apn_info_without_zero_bearers.items(), key=lambda kvp: kvp[1], reverse=True)
-
-    with open("tstapn_out.txt", "w") as out:
-        pprint(apn_info_without_zero_bearers_sorted, stream=out, sort_dicts=False)
-
+    with open("tstapn_out.txt", "w") as data_out:
+        json.dump(app_info_sorted_by_bearers, data_out, indent=4)   # 4 spaces indentation for pretty printing
