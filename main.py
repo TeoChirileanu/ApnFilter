@@ -18,7 +18,12 @@ if __name__ == '__main__':
     for apn_name, active_bearers_no in zip(apn_names, active_bearers_nos):
         apn_info[apn_name] = active_bearers_no
 
-    # remove zeroes
-    # sort by key descending
+    # todo: investigate inspection error
+    apn_info_without_zero_bearers: Dict[str, int] = dict(filter(lambda kvp: kvp[1] > 0, apn_info.items()))
 
-    pprint(apn_info)
+    # todo: convert to dictionary
+    apn_info_without_zero_bearers_sorted = sorted(apn_info_without_zero_bearers.items(), key=lambda kvp: kvp[1], reverse=True)
+
+    with open("tstapn_out.txt", "w") as out:
+        pprint(apn_info_without_zero_bearers_sorted, stream=out, sort_dicts=False)
+
