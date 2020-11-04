@@ -1,16 +1,21 @@
-from dataclasses import dataclass
-
-
-@dataclass
-class Foo:
-    greeting: str = "Hello"
-
-    def greet(self, name: str) -> str:
-        return f"{self.greeting}, {name}!"
-
+import json
+import re
+from typing import List, Dict
 
 if __name__ == '__main__':
-    my_name: str = "Teodor"
-    foo: Foo = Foo()
-    greeting: str = foo.greet(my_name)
-    print(greeting)
+    with open("tstapn.txt") as file:
+        data: str = file.read()
+
+    apn_regex: str = r"APN Name  : ([a-z]+\.[a-z]+\.[a-z]+)"
+    apn_names: List[str] = re.findall(apn_regex, data)
+
+    active_bearers_regex: str = r"Default bearers active: \s+ (\d+)"
+    active_bearers_nos_as_string: List[str] = re.findall(active_bearers_regex, data)
+    active_bearers_nos: List[int] = list(map(lambda x: int(x), active_bearers_nos_as_string))
+
+    apn_info: Dict[str, int] = {}
+    for apn_name, active_bearers_no in zip(apn_names, active_bearers_nos):
+        apn_info[apn_name] = active_bearers_no
+
+    json: str = json.dumps(apn_info, indent=4)
+    print(json)
